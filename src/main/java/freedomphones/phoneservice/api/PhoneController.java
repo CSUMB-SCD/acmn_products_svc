@@ -15,11 +15,14 @@ import freedomphones.phoneservice.business.Manager;
 public class PhoneController{
     @Autowired
     Manager manager;
+
+    @CrossOrigin
     @GetMapping("/allPhones")
     @ResponseBody
     public String getPhones(){
         return manager.getPhoneList();
     }
+    @CrossOrigin
     @GetMapping("/findById/{id}")
     public String getById(@PathVariable String id){
         return manager.getPhoneById(id);
