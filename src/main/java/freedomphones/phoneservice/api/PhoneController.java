@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import freedomphones.phoneservice.business.Manager;
 
-@CrossOrigin()
+@CrossOrigin
 @RestController
 public class PhoneController{
     @Autowired
