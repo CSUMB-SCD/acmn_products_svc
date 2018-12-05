@@ -14,7 +14,7 @@ public class PhoneController{
     @Autowired
     Manager manager;
 
-    @GetMapping("/allPhones")
+    @GetMapping(value="/allPhones", produces = "application/json")
     @ResponseBody
     public String getPhones(){
         return manager.getPhoneList();
