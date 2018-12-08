@@ -32,6 +32,6 @@ public class PhoneDbClient {
         Map<String, String> params = new HashMap<String, String>();
         params.put("prod_id", id);
         params.put("qty", qty);
-        return restTemplate.getForObject(uri, String.class);
+        return restTemplate.getForObject(uri, String.class, params);
     }
 }
