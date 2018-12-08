@@ -27,7 +27,7 @@ public class PhoneDbClient {
         return restTemplate.getForObject(uri, String.class);
     }
     public String removeQuantities(String id, String qty){
-        final String uri = "https://freedomphones-zuul-svc.herokuapp.com/phone-db-service/removeQuantities/{prod_id}/{qty}";
+        final String uri = "https://freedomphones-zuul-svc.herokuapp.com/phone-db-service/removeQuantity/{prod_id}/{qty}";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, String> params = new HashMap<String, String>();
         params.put("prod_id", id);
