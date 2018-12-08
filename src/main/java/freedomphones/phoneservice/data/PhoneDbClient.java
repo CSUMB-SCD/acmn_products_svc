@@ -21,4 +21,9 @@ public class PhoneDbClient {
         params.put("id", id);
         return restTemplate.getForObject(uri, String.class, params);
     }
+    public String getStock(){
+        final String uri = "https://freedomphones-zuul-svc.herokuapp.com/phone-db-service/getStock";
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(uri, String.class);
+    }
 }

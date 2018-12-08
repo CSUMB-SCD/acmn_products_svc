@@ -17,4 +17,7 @@ public class Manager {
     public String getPhoneById(String id){
         return phoneDbClient.getPhoneById(id);
     }
+    public String getStock(){
+        return phoneDbClient.getStock();
+    }
 }

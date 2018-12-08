@@ -24,4 +24,9 @@ public class PhoneController{
     public String getById(@PathVariable String id){
         return manager.getPhoneById(id);
     }
+    @GetMapping(value="/getStock", produces="application/json")
+    @ResponseBody
+    public String getStock(){
+        return manager.getStock();
+    }
 }
